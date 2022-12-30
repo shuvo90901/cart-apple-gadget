@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+
+
+.container {
+    position: relative;
+    width: 850px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.brand_logo {
+    height: 100px;
+    width: 260px;
+    background: url('../public/logo.webp');
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.brand_title {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.626);
+    letter-spacing: 1px;
+}
+
+.inputs {
+    text-align: left;
+    margin-top: 30px;
+}
