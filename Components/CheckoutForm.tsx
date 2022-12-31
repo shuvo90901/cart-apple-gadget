@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 import styles from '../styles/Form.module.css'
+import image from '../public/logo.webp'
+import Image from 'next/image';
 
 const CheckoutForm = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -49,8 +51,10 @@ const CheckoutForm = () => {
     return (
         <div className='mb-12'>
             <div className={styles.container}>
-                <div className={styles.brand_logo}></div>
 
+                <div className='bg-black w-1/4 rounded-full mx-auto'>
+                    <Image className='p-5' width={200} src={image}></Image>
+                </div>
                 <form onSubmit={handleSubmit(handleAddCart)} className="inputs">
                     <label className='ml-5 mt-5 text-left'>Name</label>
                     <input type="text" {
