@@ -1,0 +1,19 @@
+.brand_title {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.626);
+    letter-spacing: 1px;
+}
+
+.background {
+    background-color: #cfe0ee;
+}
+
+.all_button {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.626);
+    letter-spacing: 1px;
+}

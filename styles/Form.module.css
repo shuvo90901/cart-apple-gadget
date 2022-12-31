@@ -8,7 +8,7 @@
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
-    background: #ecf0f3;
+    background: #cfe0ee;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
@@ -24,13 +24,7 @@
     box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
 }
 
-.brand_title {
-    margin-top: 10px;
-    font-weight: 900;
-    font-size: 1.8rem;
-    color: rgba(0, 0, 0, 0.626);
-    letter-spacing: 1px;
-}
+
 
 .inputs {
     text-align: left;

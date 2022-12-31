@@ -103,10 +103,10 @@ input {
 
 body {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* height: 100vh; */
   background: #ecf0f3;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -128,6 +128,7 @@ button {
 
 label {
   margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.626);
 }
 
 label:nth-of-type(2) {
@@ -164,17 +165,7 @@ button:hover {
   box-shadow: none;
 }
 
-a {
-  position: absolute;
-  font-size: 8px;
-  bottom: 4px;
-  right: 4px;
-  text-decoration: none;
-  color: black;
-  background: yellow;
-  border-radius: 10px;
-  padding: 2px;
-}
+
 
 h1 {
   position: absolute;
