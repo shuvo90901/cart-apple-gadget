@@ -6,7 +6,7 @@ import styles from '../../styles/AllOrders.module.css'
 const index = () => {
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://task-kanishka-consultancy-server.vercel.app/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -28,7 +28,7 @@ const index = () => {
                     </thead>
                     <tbody>
                         {
-                            orders.map((order, i) =>
+                            orders.map((order: any, i) =>
                                 <tr>
                                     <th>{i + 1}</th>
                                     <td>{order.name}</td>

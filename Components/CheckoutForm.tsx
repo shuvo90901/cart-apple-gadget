@@ -32,7 +32,7 @@ const CheckoutForm = () => {
         const total = subtotal;
         const subTotal = addDelivery
         const cartInfo = { name, email, address, total, subTotal }
-        fetch('http://localhost:5000/orders', {
+        fetch('https://task-kanishka-consultancy-server.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -60,7 +60,7 @@ const CheckoutForm = () => {
                             }
                         )
                     } placeholder="Enter Your Name Please" />
-                    {errors.name && <p>{errors.name?.message}</p>}
+
                     <label className='ml-5 mt-5 text-left'>EMAIL</label>
                     <input type="email" {
                         ...register("email",
@@ -69,7 +69,6 @@ const CheckoutForm = () => {
                             }
                         )
                     } placeholder="Enter Your Email Please" />
-                    {errors.email && <p>{errors.email?.message}</p>}
                     <label className='ml-5 mt-5 text-left'>Address</label>
                     <input type="text" {
                         ...register("address",
@@ -78,7 +77,6 @@ const CheckoutForm = () => {
                             }
                         )
                     } placeholder="Enter Your Address Please" />
-                    {errors.address && <p>{errors.address?.message}</p>}
                     <label className='ml-5 mt-5 text-left'>Amount</label>
                     <input name='num' onChange={handleAmountChange} type="number" placeholder="Enter the Amount" required />
 
